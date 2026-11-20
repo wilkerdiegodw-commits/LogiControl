@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LogiControl</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        body {
+            background-color: #f1f4f9;
+        }
+
+        .menu-lateral {
+            min-height: 100vh;
+            background-color: #172554;
+            color: white;
+        }
+
+        .menu-lateral a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 5px;
+        }
+
+        .menu-lateral a:hover {
+            background-color: #1e40af;
+        }
+
+        .conteudo {
+            padding: 30px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            height: 100%;
+        }
+
+        .card .btn {
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- MENU LATERAL -->
+        <div class="col-md-3 col-lg-2 menu-lateral p-3">
+
+            <h3 class="mb-4">📦 LogiControl</h3>
+
+            <!-- INÍCIO CORRIGIDO -->
+            <a href="/logicontrol/">
+                🏠 Início
+            </a>
+
+            <a href="produtos.php">
+                📦 Produtos
+            </a>
+
+            <a href="enderecos.php">
+                📍 Endereços
+            </a>
+
+            <a href="transportadores.php">
+                🚚 Transportadores
+            </a>
+
+            <a href="fretes.php">
+                📝 Gerar Fretes
+            </a>
+
+            <a href="listar_fretes.php">
+                📋 Consultar Fretes
+            </a>
+
+            <a href="relatorio_fretes.php">
+                📊 Relatório de Fretes
+            </a>
+
+        </div>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="col-md-9 col-lg-10 conteudo">
+
+            <h2>Bem-vindo ao LogiControl!</h2>
+
+            <p class="text-secondary">
+                Sistema de gerenciamento logístico.
+            </p>
+
+            <hr>
+
+            <div class="row g-3">
+
+                <!-- PRODUTOS -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-sm p-3">
+
+                        <h5>📦 Produtos</h5>
+
+                        <p>Cadastre e gerencie seus produtos.</p>
+
+                        <a href="produtos.php"
+                           class="btn btn-primary">
+                            Acessar
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- ENDEREÇOS -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-sm p-3">
+
+                        <h5>📍 Endereços</h5>
+
+                        <p>Gerencie origem e destino.</p>
+
+                        <a href="enderecos.php"
+                           class="btn btn-primary">
+                            Acessar
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- TRANSPORTADORES -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-sm p-3">
+
+                        <h5>🚚 Transportadores</h5>
+
+                        <p>Cadastre seus transportadores.</p>
+
+                        <a href="transportadores.php"
+                           class="btn btn-primary">
+                            Acessar
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- GERAR FRETES -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-sm p-3">
+
+                        <h5>📝 Gerar Fretes</h5>
+
+                        <p>Cadastre e organize seus fretes.</p>
+
+                        <a href="fretes.php"
+                           class="btn btn-primary">
+                            Acessar
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- CONSULTAR FRETES -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-sm p-3">
+
+                        <h5>📋 Consultar Fretes</h5>
+
+                        <p>Visualize os fretes cadastrados.</p>
+
+                        <a href="relatorio_fretes.php"
+                           class="btn btn-primary">
+                            Consultar
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- RELATÓRIO DE FRETES -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="card shadow-sm p-3">
+
+                        <h5>📊 Relatório de Fretes</h5>
+
+                        <p>Baixe relatórios de fretes por data.</p>
+
+                        <a href="listar_fretes.php"
+                           class="btn btn-success">
+                            Acessar relatório
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
